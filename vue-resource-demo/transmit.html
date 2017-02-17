@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <ul>
+      <li v-for="article in articles">
+        {{article.title}}
+        <img :src="article.images.small">
+      </li>
+    </ul>
+  </div>
+  <script src="vue.js"></script>
+  <script src="router.js"></script>
+  <script src="vue-resource.js"></script>
+  <script>
+
+  Vue.use(VueResource);
+
+  const app = new Vue({
+    el: '#app',
+    data() {
+      return {
+        articles: []
+      }
+    },
+    /* mounted() {
+      this.$http.jsonp('https://api.douban.com/v2/movie/top250?count=10', {}, {
+        headers: {
+
+        },
+        emulateJSON: true
+      }).then(function(response) {
+        // 这里是处理正确的回调
+        console.log(response)
+        this.articles = response.data.subjects
+          // this.articles = response.data["subjects"] 也可以
+      }, function(response) {
+        // 这里是处理错误的回调
+        console.log(response)
+      });
+    }, */
+    mounted() {
+      this.$http.jsonp('https://api.douban.com/v2/movie/top250?count=10', {}, {
+        headers: {
+
+        },
+        emulateJSON: true
+      }).then(function({data:{count,start,subjects}}) {
+        // 这里是处理正确的回调
+        this.articles = subjects
+          // this.articles = response.data["subjects"] 也可以
+      }, function(response) {
+        // 这里是处理错误的回调
+        console.log(response)
+      });
+    }
+
+    /* created () {
+      // POST
+      this.$http.post(`${common.httpHead}XXX/XXX`, {
+        KEY: VALUE
+      }).then(({data: {code, msg, data}}) => {
+
+      }), (res) => {
+      })
+
+      // GET
+      this.$http.get('/someUrl').then(response => {
+        // get body data
+        this.someData = response.body;
+      }, response => {
+        // error callback
+      });
+
+    } */
+
+  })
+  </script>
+</body>
+
+</html>
