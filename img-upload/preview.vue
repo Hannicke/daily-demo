@@ -75,6 +75,12 @@
           reader = new window.FileReader()
           reader.readAsDataURL(file[i])
           reader.onload = function (e) {
+            let mb = (e.total / 1024) / 1024
+            if (mb >= 2) {
+              mui.toast('文件大小大于2M')
+              return
+            }
+            
             // 一张图片
             // vm.image = e.target.result
 
