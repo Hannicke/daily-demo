@@ -10,6 +10,10 @@
 
 [图文并茂！8 张 Gif 图学会 Flexbox](http://www.tuicool.com/articles/fQba6f)
 
-[Vue开发中的常见问题](http://cnodejs.org/topic/5750d752491b9c4f36910fec)
-
 [webpack 好文章好工具合集](http://www.tuicool.com/articles/Zrauq2q)
+
+[ES6的新方法实现数组去重](http://www.cnblogs.com/Freewayy/p/6160521.html)
+
+[Ajax总结篇](http://www.tuicool.com/articles/ymEFbeJ)
+
+[Node 情怀者](https://nodelover.me/#/)
