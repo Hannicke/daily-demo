@@ -8,8 +8,8 @@
     <div>
       <div v-if="images.length > 0">
         <ul>
-          <li v-for='img in images'>
-            <img :src="img" width="100%" @click='delImage($index)'>
+          <li v-for='(img, index) in images'>
+            <img :src="img" width="100%" @click='delImage(index)'>
           </li>
         </ul>
       </div>
@@ -98,7 +98,7 @@
       },
       // 点击删除当前图片
       delImage: function (index) {
-        this.images.shift(index)
+        this.images.splice(index, 1)
       }
     }
   }
