@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src='vue.js'></script>
+  <script src='vuex.js'></script>
+</head>
+
+<body>
+  <div id="app">
+    <p>{{countt}}
+      <button @click="inc">+</button>
+      <button @click="dec">-</button>
+    </p>
+  </div>
+  <script>
+  const store = new Vuex.Store({
+    state: {
+      count: 0
+    },
+    mutations: {
+      incc: state => state.count++,
+      decc: state => state.count--
+    }
+  })
+
+  const app = new Vue({
+    el: '#app',
+    computed: {
+      countt () {
+        return store.state.count
+      }
+    },
+    methods: {
+      inc () {
+        store.commit('incc')
+      },
+      dec () {
+        store.commit('decc')
+      }
+    }
+  })
+
+  /* new Vue({
+    el: '#app',
+    data () {
+      return {
+        count: this.$store.state.count
+      }
+    },
+    methods: {
+      inc () {
+        this.count++
+      },
+      dec () {
+        this.count--
+      }
+    }
+  }) */
+  </script>
+</body>
+
+</html>
