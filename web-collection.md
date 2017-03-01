@@ -17,3 +17,5 @@
 [Ajax总结篇](http://www.tuicool.com/articles/ymEFbeJ)
 
 [Node 情怀者](https://nodelover.me/#/)
+
+[程序员，你真的会写简历吗？](http://www.imooc.com/article/16649)
