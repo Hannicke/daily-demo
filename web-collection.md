@@ -12,6 +12,8 @@
 
 [JavaScript 模块化编程简史（2009 - 2016）](http://www.tuicool.com/articles/rU7fE3v)
 
+[前端常见算法的JS实现](http://www.tuicool.com/articles/U7VJFzM)
+
 [js闭包的本质](http://www.tuicool.com/articles/7nAfiev)
 
 [webpack 好文章好工具合集](http://www.tuicool.com/articles/Zrauq2q)
