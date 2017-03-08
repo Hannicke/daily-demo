@@ -10,11 +10,13 @@
 
 [Git 命令速查表](https://segmentfault.com/a/1190000008535266)
 
+[python资源全汇总—中文版](https://zhuanlan.zhihu.com/p/25621020)
+
 [JavaScript 模块化编程简史（2009 - 2016）](http://www.tuicool.com/articles/rU7fE3v)
 
-[前端常见算法的JS实现](http://www.tuicool.com/articles/U7VJFzM)
-
 [js闭包的本质](http://www.tuicool.com/articles/7nAfiev)
+
+[前端常见算法的JS实现](http://www.tuicool.com/articles/U7VJFzM)
 
 [webpack 好文章好工具合集](http://www.tuicool.com/articles/Zrauq2q)
 
