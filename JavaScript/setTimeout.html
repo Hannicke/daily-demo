@@ -66,6 +66,21 @@
 
 	// “2 3 5 4 1”
   </script>
+
+  <script>
+      var result = (function(n) {
+        if (n <= 1) {
+          return 1
+        } else {
+          return n * arguments.callee(n - 1)
+        }
+      })(4)  // 24
+      // callee 属性指向当前正在运行的函数，而 caller 指向调用当前正在运行函数的函数。
+      // 在 ES5 严格模式下，这些属性是被废弃掉的，如果要访问它们会抛出错误。
+      // arguments.callee 属性在递归函数（递归函数是一个普通函数，通过它的签名指向自身）下很有用，
+      // 尤其是函数的签名不可用时（也就是匿名函数）。
+      // 因为匿名函数没有名字，唯一指向自身的方法就是通过 arguments.callee。
+  </script>
 </body>
 
 </html>
