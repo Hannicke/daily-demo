@@ -8,6 +8,8 @@
 
 [程序员，你真的会写简历吗？](http://www.imooc.com/article/16649)
 
+[stackoverflow](https://stackoverflow.com/)
+
 > JavaScript
 
 [JavaScript 模块化编程简史（2009 - 2016）](http://www.tuicool.com/articles/rU7fE3v)
