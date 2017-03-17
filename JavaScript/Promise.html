@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <a href="https://github.com/hangyangws/myArticles">ES6、参考</a>
+  <script>
+  function imageLoad(_url) {
+    return new Promise(function(resolve, reject) {
+      let _image = new Image()
+      _image.onload = function() {
+        resolve('加载成功')
+      }
+      _image.onerror = function() {
+        reject(new Error('加载失败'))
+      }
+      _image.src = _url
+    })
+  }
+
+  imageLoad('这是图片路径')
+    .then(
+      _success => console.log(_success),
+      _error => console.log(_error)
+    )
+
+
+  function newPromise() {
+    return new Promise(resolve => resolve('I was resolved'))
+  }
+
+  new Promise(resolve => {
+      resolve()
+    })
+    .then(() => {
+      // return一个字符串
+      return '我只是一个字符串'
+    })
+    .then(_data => {
+      console.log(_data) // 打印：'我只是一个字符串'
+        // 没有显式的return语句
+    })
+    .then(_data => {
+      console.log(_data) // 打印：undefined
+        // return一个Promise实例
+      return newPromise()
+    })
+    .then(_data => {
+      console.log(_data) // 打印：I was resolved
+    })
+  </script>
+</body>
+
+</html>
