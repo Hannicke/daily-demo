@@ -32,6 +32,8 @@
 
 [vue-cli webpack配置分析](https://segmentfault.com/a/1190000008644830)
 
+[听说集齐了这些Js题，笔试都不怕了呢！](https://zhuanlan.zhihu.com/p/28592290)
+
 > CSS
 
 [CSS五种方式实现Footer置底](http://www.tuicool.com/articles/7nq6Vvm)
