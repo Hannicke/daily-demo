@@ -34,6 +34,8 @@
 
 [听说集齐了这些Js题，笔试都不怕了呢！](https://zhuanlan.zhihu.com/p/28592290)
 
+[Fetch -- http请求的另一种姿势](https://www.tuicool.com/articles/f6B7bqJ)
+
 > CSS
 
 [CSS五种方式实现Footer置底](http://www.tuicool.com/articles/7nq6Vvm)
