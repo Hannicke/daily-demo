@@ -10,6 +10,8 @@
 
 [程序员，你真的会写简历吗？](http://www.imooc.com/article/16649)
 
+[BAT 要的是什么样的前端实习生？](https://www.tuicool.com/articles/bInqieZ)
+
 [stackoverflow](https://stackoverflow.com/)
 
 > JavaScript
