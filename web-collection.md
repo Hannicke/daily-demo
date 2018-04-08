@@ -12,6 +12,8 @@
 
 [BAT 要的是什么样的前端实习生？](https://www.tuicool.com/articles/bInqieZ)
 
+[合格前端系列第十一弹-初探 Nuxt.js 秘密花园](https://zhuanlan.zhihu.com/p/35280019)
+
 [stackoverflow](https://stackoverflow.com/)
 
 > JavaScript
